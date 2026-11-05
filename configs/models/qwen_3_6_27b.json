@@ -1,0 +1,16 @@
+{
+  "_doc": "Qwen 3.6 27B (revision 6a9e13bd6fc8f0983b9b99948120bc37f49c13e9) on vLLM, thinking enabled, 65,536 generated tokens, 1,800 s per request. Samples at temperature 0.6 with top-p 0.95, top-k 20, min-p 0, presence penalty 0, repetition penalty 1 (App. A.2).",
+  "name": "qwen_3_6_27b",
+  "provider": "vllm",
+  "model": "Qwen/Qwen3.6-27B",
+  "max_tokens": 65536,
+  "temperature": 0.6,
+  "enable_thinking": true,
+  "top_p": 0.95,
+  "top_k": 20,
+  "min_p": 0.0,
+  "presence_penalty": 0.0,
+  "repetition_penalty": 1.0,
+  "images": true,
+  "request_timeout": 1800.0
+}

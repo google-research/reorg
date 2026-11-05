@@ -1,0 +1,11 @@
+{
+  "_doc": "LAB judge, App. A.5.3: harvey-labs' criterion judge with Gemini 3.1 Pro (GEMINI_API_KEY) at temperature 0, high thinking, 16,384 output tokens and a JSON verdict schema; up to 3 attempts per criterion. criterion_parallelism: concurrent criteria per task; request_timeout: seconds per request (--request-timeout-seconds 1800).",
+  "provider": "gemini",
+  "model": "gemini-3.1-pro-preview",
+  "max_tokens": 16384,
+  "temperature": 0.0,
+  "thinking_level": "high",
+  "attempts": 3,
+  "criterion_parallelism": 4,
+  "request_timeout": 1800
+}

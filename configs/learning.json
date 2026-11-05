@@ -1,0 +1,37 @@
+{
+  "_doc": "One-round library learning, Alg. 1 and App. A.2 'Library Learning and Artifact Ranking' (settings table); code defaults are the same values. retrieve_top_k: the first-round planner retrieves 5 skills, the retrieved candidates B. beam_width / children_per_parent / iterations: beam 3, up to 3 distinct mutations per beam skill, 3 search steps after the initial tournament (at most 5 + 3x3x3 = 32 executions). mutation_weights: family weights Feedback, Propose and Loop-In insertion 2/2/1, node relocation 3, role replacement 1; mutation_seed 0 seeds every draw (with the round and the parent's candidate ID). grouping_seed: groups of 4 blinded artifacts, at least 3 appearances each, and their presentation order are seeded with 1729. promotion_pool / promote_top: promotion reranks 5 eligible distinct candidates and keeps the top 3. lessons_per_group: up to 5 observations in each of the four structure/edit outcome groups of the lesson prompt. temperature: per provider, for retrieval, online ranking and lesson compaction; Gemini uses 0.2, a provider not listed uses its model profile (Qwen: the profile's sampling). candidate_parallelism: concurrent candidate executions (9); stakeholder_parallelism: concurrent nodes within a frontier (6); retries: infrastructure retries per action. judge: up to 3 attempts per group, 100 turns, 100 code_exec calls, a turns-remaining warning from 20 turns left, context compaction at 0.9, 600 s per shell command, 6 h per attempt, 9 groups judged concurrently.",
+  "retrieve_top_k": 5,
+  "beam_width": 3,
+  "children_per_parent": 3,
+  "iterations": 3,
+  "mutation_weights": {"insert_feedback": 2, "insert_propose": 2, "insert_loop_in": 1, "relocate": 3, "replace_role": 1},
+  "mutation_seed": 0,
+  "grouping_seed": 1729,
+  "promotion_pool": 5,
+  "promote_top": 3,
+  "lessons_per_group": 5,
+  "temperature": {"gemini": 0.2},
+  "candidate_parallelism": 9,
+  "stakeholder_parallelism": 6,
+  "retries": 2,
+  "judge": {
+    "attempts": 3,
+    "max_turns": 100,
+    "code_exec_max_uses": 100,
+    "turns_remaining_warning": 20,
+    "context_summarization_cutoff": 0.9,
+    "shell_timeout": 600,
+    "timeout": 21600,
+    "parallelism": 9
+  },
+  "later_round": {
+    "_doc": "Later-round precedent learning, App. A.3 'Learning later-round retrieval', with the one-round library frozen. retrieve_top_k: the parent state runs the first-round planner's single top skill (the planner is asked for one). sampled_skills / sampling_seed: 8 unused nonempty skills drawn without replacement across node-count levels, the per-task seed derived from 31415. grouping_seed: STOP-anchored groups of 4 and their presentation are seeded with 1729. min_distinct_artifacts: a ranking needs STOP and 4 other distinct artifacts. temperature: per provider, for retrieval, state projection, ranking and the lesson; Gemini uses 0.2, a provider not listed uses its model profile. task_parallelism: concurrent tasks; it does not change results. Branches and the judge use candidate_parallelism, stakeholder_parallelism, retries and judge above.",
+    "retrieve_top_k": 1,
+    "sampled_skills": 8,
+    "sampling_seed": 31415,
+    "grouping_seed": 1729,
+    "min_distinct_artifacts": 5,
+    "temperature": {"gemini": 0.2},
+    "task_parallelism": 4
+  }
+}

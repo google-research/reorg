@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "useful_communication_insight.v0.schema.json",
+  "title": "Useful communication flows and features for one work state",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "helpful_communication_flows_if_steering",
+    "helpful_communication_flow_features_if_steering"
+  ],
+  "properties": {
+    "helpful_communication_flows_if_steering": {
+      "type": "string",
+      "minLength": 1
+    },
+    "helpful_communication_flow_features_if_steering": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

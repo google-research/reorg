@@ -1,0 +1,10 @@
+{
+  "_doc": "LAB transfer wrappers and their sha256 hashes, one per action (file names are the action names). Each LAB action prompt stacks the shared role and action prompts under reorg/prompts/, then the wrapper for its action (data/lab/runtime.py).",
+  "files": {
+    "initial_work.md": {"sha256": "25cbacf9ca30274a43077383ca57e231c676858ac9f29d148ff0919fd8ed13e6"},
+    "revise.md": {"sha256": "8481c210ecbe16025f5565988112b5fe6c2d15b6509fa78e8291db73dc57c04d"},
+    "feedback.md": {"sha256": "a122a98945b5ef6386a72fd6ac6c252270340a63114ade5f745020f8797e648a"},
+    "propose.md": {"sha256": "bf66eaa76df68e1f118f6e962abf263b3073180aefae97e6a9a76e82532e2f26"},
+    "loop_in.md": {"sha256": "346ca5e21863e1424701155c9ae1edb8edbdd28942660b71a42a063aa32abca4"}
+  }
+}

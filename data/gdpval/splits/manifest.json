@@ -1,0 +1,10 @@
+{
+  "_doc": "openai/gdpval at a pinned revision. files_digest covers the parquet and every reference and expert deliverable file (sha256sum lines, sorted by path).",
+  "repo_id": "openai/gdpval",
+  "revision": "11e7900cdcac61bc4daf59e65feb238acda98fbf",
+  "parquet": "data/train-00000-of-00001.parquet",
+  "parquet_sha256": "f8422fab9b21d90c0ee5f0659842ab666d418cb8940842918f9f4b0df7ae0202",
+  "tasks": 220,
+  "files": 510,
+  "files_digest": "a326825fcf24366bb457c1d4c661c3a8f457f130caf1db98f2793339888922b3"
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["analysis", "task_completion_score"],
+  "properties": {
+    "analysis": {"type": "string", "minLength": 1},
+    "task_completion_score": {"type": "integer", "minimum": 1, "maximum": 10}
+  }
+}

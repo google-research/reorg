@@ -1,0 +1,10 @@
+{
+  "_doc": "JobBench transfer wrappers and their sha256 hashes. The runtime appends each to the shared action prompt under '# JobBench Transfer Wrapper'. initial_work.md and revise.md wrap the worker's initial work and revision.",
+  "files": {
+    "feedback.md": "6ceeb1d78bbe03cca40759867340c4c211680c398cf531fedf8d779c37cf13d3",
+    "initial_work.md": "87b3fc0245bf9a52c37e8f971bb793b5691a6226a7b8856569abb9602c8391f2",
+    "loop_in.md": "bc01ac38301713a6b60e1e4063513e26901c7dd891157d23aef1accb81c7b3bc",
+    "propose.md": "b536adf65f4b9c3c1e844e5af2725bb9c2bd97f163522be3b155a0041d56cc8a",
+    "revise.md": "7ea667b1b77b59dcba20eb215241784b4277bd5360b8680eaa1f3fe9c9e65478"
+  }
+}

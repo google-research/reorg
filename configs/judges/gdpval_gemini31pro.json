@@ -1,0 +1,10 @@
+{
+  "_doc": "GDPval judge member, App. A.5.2: Gemini 3.1 Pro on the Gemini Developer API (GEMINI_API_KEY), temperature 0.6, high thinking, 65,536 output tokens.",
+  "name": "gdpval_gemini31pro",
+  "provider": "gemini",
+  "model": "gemini-3.1-pro-preview",
+  "max_tokens": 65536,
+  "temperature": 0.6,
+  "thinking_level": "high",
+  "request_timeout": 1800.0
+}

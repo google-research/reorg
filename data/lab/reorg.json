@@ -1,0 +1,7 @@
+{
+  "_doc": "LAB action runtime (data/lab/runtime.py; App. A.2). max_turns: turn cap of every worker and stakeholder session; loop_in_phase_max_turns: turn cap of each of the four Loop-In phase sessions. shell_timeout: seconds per code_exec command. finalization_guard: code_exec budget of initial work, Feedback, Propose and Loop-In phases (never the worker's revision): pre_output_calls calls before the required outputs exist, post_output_calls once they do. Turn warnings (50 turns left) and context compaction (0.7) are reorg.worker's defaults. Web retrieval and document-generation skills are off.",
+  "max_turns": 250,
+  "loop_in_phase_max_turns": 250,
+  "shell_timeout": 600,
+  "finalization_guard": {"pre_output_calls": 50, "post_output_calls": 4}
+}

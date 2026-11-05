@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "communication_state_summary.v0.schema.json",
+  "title": "Simple summary of the task and work chronicle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["task_summary", "what_was_suggested", "what_was_done"],
+  "properties": {
+    "task_summary": {"type": "string", "minLength": 1},
+    "what_was_suggested": {"$ref": "#/$defs/history_items"},
+    "what_was_done": {"$ref": "#/$defs/history_items"}
+  },
+  "$defs": {
+    "history_items": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "next_round_communication_recommendation.v0.schema.json",
+  "title": "Recommended communication flows for the next round",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["analysis", "recommendations"],
+  "properties": {
+    "analysis": {"type": "string", "minLength": 1},
+    "recommendations": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "contains": {
+        "type": "object",
+        "required": ["option_id"],
+        "properties": {"option_id": {"const": "leave_unchanged"}}
+      },
+      "minContains": 1,
+      "maxContains": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["option_id", "reason"],
+        "properties": {
+          "option_id": {
+            "type": "string",
+            "pattern": "^(leave_unchanged|flow_[0-9]{3})$"
+          },
+          "reason": {"type": "string", "minLength": 1}
+        }
+      }
+    }
+  },
+  "$comment": "The program also checks for nine unique allowed flow IDs, one leave_unchanged option, best-first list order, and no duplicate option_id."
+}

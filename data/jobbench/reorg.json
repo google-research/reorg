@@ -1,0 +1,20 @@
+{
+  "_doc": "JobBench action runtime (App. A.4). max_turns: Stirrup turn cap of every action; loop_in_phase_max_turns: turn cap of each Loop-In phase. turn_warning_threshold, context_summarization_cutoff, shell_timeout_seconds: Stirrup settings. stakeholder_pre_output_calls / stakeholder_post_output_calls: code_exec calls a stakeholder or Loop-In phase may make before / after its output file exists; worker actions have no call ceiling. retrieval_splits: task subsets whose worker gets the guarded web tools (main on, easy off; stakeholders never). search_model, search_thinking_level, search_timeout_seconds: the grounded search call, at temperature 0. fetch_timeout_seconds: fetch and download. search_limit, fetch_limit, download_limit, download_byte_limit, max_download_file_bytes: per worker action: 16 searches, 32 fetches, 16 downloads, 1 GiB in total, 512 MiB per file.",
+  "max_turns": 250,
+  "loop_in_phase_max_turns": 250,
+  "turn_warning_threshold": 50,
+  "context_summarization_cutoff": 0.7,
+  "shell_timeout_seconds": 600,
+  "stakeholder_pre_output_calls": 50,
+  "stakeholder_post_output_calls": 4,
+  "retrieval_splits": ["main"],
+  "search_model": "gemini-3.5-flash",
+  "search_thinking_level": "low",
+  "search_timeout_seconds": 180,
+  "fetch_timeout_seconds": 300,
+  "search_limit": 16,
+  "fetch_limit": 32,
+  "download_limit": 16,
+  "download_byte_limit": 1073741824,
+  "max_download_file_bytes": 536870912
+}

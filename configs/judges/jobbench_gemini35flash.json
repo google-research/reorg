@@ -1,0 +1,10 @@
+{
+  "_doc": "JobBench judge, App. A.5.3: upstream job-bench-eval with Gemini 3.5 Flash (GEMINI_API_KEY) at high thinking and 65,536 output tokens. Sampling temperature is the one upstream requests (0.0). Extracted submission contents are capped at max_file_content_chars (head/tail per file). Per task, rubric_workers rubric items are judged concurrently, each with upstream's max_retries attempts and timeout_per_rubric seconds per request (upstream's --max-workers 4 --max-retries 2 --timeout-per-rubric 300).",
+  "model": "gemini-3.5-flash",
+  "thinking_level": "HIGH",
+  "max_tokens": 65536,
+  "max_file_content_chars": 150000,
+  "rubric_workers": 4,
+  "max_retries": 2,
+  "timeout_per_rubric": 300
+}

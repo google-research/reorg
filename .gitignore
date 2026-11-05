@@ -1,0 +1,8 @@
+# downloaded benchmark data and run outputs are never committed
+/downloads/
+/runs/
+__pycache__/
+*.pyc
+.venv
+.venvs
+.pytest_cache/

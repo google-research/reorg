@@ -1,0 +1,9 @@
+{
+  "_doc": "GDPval action settings (App. A.2, A.4). Every worker and stakeholder action: 250 turns, a turns-remaining warning from 50 turns left, context compaction at 0.7 of the window, 600 s per shell command. Each Loop-In phase session: 30 turns. Web search is on for the worker and off for stakeholders. The search settings are fixed in reorg/web_search.py: the worker's Gemini model at temperature 0 (Gemini 3.5 Flash for a vLLM worker), low thinking, 4 searches per action, 120 s per search; page fetches use the model profile's request timeout.",
+  "max_turns": 250,
+  "loop_in_phase_max_turns": 30,
+  "turns_remaining_warning_threshold": 50,
+  "context_summarization_cutoff": 0.7,
+  "shell_timeout": 600,
+  "web_search": {"worker": true, "stakeholders": false}
+}

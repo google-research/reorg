@@ -1,0 +1,12 @@
+{
+  "_doc": "harveyai/harvey-labs at a pinned commit. The 200-task test split is our own family-aware stratified split of all tasks (seed below); tasks_sha256 is the hash of the task index with split labels written by prepare.",
+  "repository": "https://github.com/harveyai/harvey-labs.git",
+  "revision": "e4bf776e3900f8906252af20ebb627f24ece52a3",
+  "split_seed": 20260717,
+  "split_sizes": {
+    "train": 1359,
+    "valid": 200,
+    "test": 200
+  },
+  "tasks_sha256": "04cdc175444c10a69ae1f03c7ee5b2ff4ac233bd5ff3be7b0f7bb219aa277b7e"
+}

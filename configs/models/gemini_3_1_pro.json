@@ -1,0 +1,11 @@
+{
+  "_doc": "Gemini 3.1 Pro (App. A.2): high thinking, worker and stakeholder temperature 1.0, 65,536 generated tokens, 1,800 s per request. Planner, lesson-compaction and ranking calls pass temperature 0.2 to complete_json.",
+  "name": "gemini_3_1_pro",
+  "provider": "gemini",
+  "model": "gemini-3.1-pro-preview",
+  "max_tokens": 65536,
+  "temperature": 1.0,
+  "thinking_level": "high",
+  "images": true,
+  "request_timeout": 1800.0
+}

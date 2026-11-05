@@ -1,0 +1,11 @@
+{
+  "_doc": "Inference, Eq. 1 and App. A.3 'Deployment'. max_rounds: reflection budget R = 3 (0 runs the worker alone). first_round_top_k: first-round retrieval ranks 5 skills and runs the first. stop_score: the completion gate stops at a score >= 9 on its 1-10 scale. later_round_flows: later-round retrieval returns 9 skills plus leave_unchanged; the P10 prompt and schema fix this number. planner_temperature: per provider; Gemini planner calls use 0.2, a provider not listed uses its model profile (Qwen: the profile's sampling). stakeholder_parallelism: concurrent nodes within one frontier. retries: infrastructure retries per action. task_parallelism: concurrent tasks; it does not change results.",
+  "max_rounds": 3,
+  "first_round_top_k": 5,
+  "stop_score": 9,
+  "later_round_flows": 9,
+  "planner_temperature": {"gemini": 0.2},
+  "stakeholder_parallelism": 2,
+  "retries": 2,
+  "task_parallelism": 4
+}

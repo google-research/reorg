@@ -1,0 +1,14 @@
+{
+  "_doc": "GDPval judge panel, App. A.5.2. Each member judges each candidate-vs-expert pair once (no A/B swap audits); visible A/B order is drawn from random.Random(seed) in cohort order. Loop settings: up to 100 turns (warning at 20 left), context summarization at 0.9 of the window, a 40-call code_exec budget per attempt with 6,000-character results and 600 s per command, a 10,800 s wall clock per attempt, and one fresh retry after no finish, a timeout or an agent error. parallelism: concurrent judge sessions across all members; it does not change results.",
+  "members": ["gemini31pro", "qwen36", "sonnet46"],
+  "seed": 0,
+  "max_turns": 100,
+  "turn_warning_threshold": 20,
+  "context_summarization_cutoff": 0.9,
+  "code_exec_max_uses": 40,
+  "code_exec_result_max_chars": 6000,
+  "shell_timeout_seconds": 600,
+  "attempt_timeout_seconds": 10800,
+  "official_retries": 1,
+  "parallelism": 32
+}

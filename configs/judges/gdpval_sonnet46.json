@@ -1,0 +1,11 @@
+{
+  "_doc": "GDPval judge member, App. A.5.2: Claude Sonnet 4.6 through Vertex AI rawPredict (VERTEX_PROJECT, Application Default Credentials), adaptive thinking with summarized display, maximum output effort, temperature 1.0, 65,536 output tokens.",
+  "provider": "vertex_claude",
+  "model": "claude-sonnet-4-6",
+  "location": "global",
+  "max_tokens": 65536,
+  "temperature": 1.0,
+  "thinking": {"type": "adaptive", "display": "summarized"},
+  "effort": "max",
+  "request_timeout": 1800
+}

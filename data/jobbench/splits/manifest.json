@@ -1,0 +1,61 @@
+{
+  "_doc": "JobBench/job-bench at a pinned revision. prepared_tasks_sha256 is the hash of the task index written by prepare.",
+  "repo_id": "JobBench/job-bench",
+  "repo_type": "dataset",
+  "revision": "934d4c93542c24926d0957ed6feecd6bbd922c41",
+  "raw_split_dirs": {
+    "main": "dataset",
+    "easy": "dataset_easy"
+  },
+  "parquet_files": {
+    "main": {
+      "path": "tasks.parquet",
+      "size_bytes": 539171,
+      "sha256": "2f54837a0cdff0b8f8e935120eba186b89fc19af9afafd1d5d61c65b498beac8"
+    },
+    "easy": {
+      "path": "easy.parquet",
+      "size_bytes": 446260,
+      "sha256": "854e2dab66f218e6a63131e21b49c1c1d651f8d0281444e3305052fb819ef661"
+    }
+  },
+  "columns": [
+    "task_id",
+    "occupation",
+    "task_num",
+    "prompt",
+    "reference_files",
+    "reference_file_urls",
+    "reference_file_hf_uris",
+    "rubric_json",
+    "task_card"
+  ],
+  "expected": {
+    "main": {
+      "tasks": 65,
+      "occupations": 35,
+      "visible_reference_files": 268,
+      "hidden_search_files": 103,
+      "rubrics": 569,
+      "criteria": 2066
+    },
+    "easy": {
+      "tasks": 63,
+      "occupations": 35,
+      "visible_reference_files": 226,
+      "hidden_search_files": 0,
+      "rubrics": 710,
+      "criteria": 2510
+    }
+  },
+  "expected_snapshot_files": 985,
+  "allow_patterns": [
+    "README.md",
+    ".gitattributes",
+    "tasks.parquet",
+    "easy.parquet",
+    "dataset/**",
+    "dataset_easy/**"
+  ],
+  "prepared_tasks_sha256": "e2e8ede812939664efa60d2702bcc349ad3b608039fb8b7b716da13e4ee1a8d9"
+}

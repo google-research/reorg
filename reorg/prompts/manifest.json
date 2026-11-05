@@ -1,0 +1,128 @@
+{
+  "files": {
+    "actions/feedback.md": {
+      "sha256": "4e2e2eb352a9e79b53e857380f40f164e3047dfb6f736cf54654eaa5cb26602c",
+      "paper": "P2"
+    },
+    "actions/propose.md": {
+      "sha256": "dcde1f8c5c4ce61c6bb6e5f949e07bbfb957e0353f11f5166e0ec6ae70dd63f6",
+      "paper": "P3"
+    },
+    "learning/artifact_ranking.md": {
+      "sha256": "427387a8991c35a6370c11533cc548b6016f2cf02bace669cf8aa8975e4ef768",
+      "paper": "P6"
+    },
+    "learning/artifact_ranking.schema.json": {
+      "sha256": "65273d2d47800af4a7d74d2e9dd0b3ed67118d3383f90a423633028586411453",
+      "paper": "P6"
+    },
+    "learning/later_round_lesson.md": {
+      "sha256": "9196767062312bc1715d5fc094b6dfd46c051f66a126fb281062c5bb6dc5af49",
+      "paper": "P11"
+    },
+    "learning/later_round_lesson.schema.json": {
+      "sha256": "e0c6affebb71adbefbacbe554ef0fb968fd3ee49fed237d1d79aab182d1fbcbf",
+      "paper": "P11"
+    },
+    "learning/lesson_compaction.md": {
+      "sha256": "4727d56052c797bed1572697f8c9f2b6f691e52170bca0ac7c689490ad03e3cb",
+      "paper": "P7"
+    },
+    "loop_in/discussion.md": {
+      "sha256": "8ac2f02b834d4aaf95e2a93cea09361d418d9ff72aeb9685154e9b19ff845fa0",
+      "paper": "P4"
+    },
+    "loop_in/loop_in.md": {
+      "sha256": "be381b9c58c4443a2c9e478b27dea4ca619b1cdaf5a4490908171d70f0bfe3c0",
+      "paper": "P4"
+    },
+    "loop_in/select.md": {
+      "sha256": "9d9b46e77ef13569033568cbafa05e10277a1354948b44a8686de7da20cd62b9",
+      "paper": "P4"
+    },
+    "loop_in/summary.md": {
+      "sha256": "888ffaebc47437c2b6296040fe2c2d06b7061c821d9e0a655a42f42c5d4f2921",
+      "paper": "P4"
+    },
+    "planner/completion_assessment.md": {
+      "sha256": "2073ecdc65beb3cb9c06de1e4754439654459893f9004879bc16dac4a9362676",
+      "paper": "P9"
+    },
+    "planner/completion_assessment.schema.json": {
+      "sha256": "df6480f5a55123606c9e9293841bd6ff7bcff28a1c5b5efa7946942b15dee7e0",
+      "paper": "P9"
+    },
+    "planner/first_round_retrieval.md": {
+      "sha256": "bcc8545a65552a66a3aa8d8468182fa3bd060c2e9d31a0d5b7bf30e7596014ad",
+      "paper": "P5"
+    },
+    "planner/later_round_retrieval.md": {
+      "sha256": "b7a76127cde1b244f340e5957b45c91162b9a1bfad01393545e14af0b7904753",
+      "paper": "P10"
+    },
+    "planner/later_round_retrieval.schema.json": {
+      "sha256": "98f2e0dad89516eedc3659d69731930556976ac1270b8e6bd66f54278adfb6a0",
+      "paper": "P10"
+    },
+    "planner/state_projection.md": {
+      "sha256": "190d23eb1740a66a9a3e2918f391ba8689e44e05a5d35f9b0899c65d7347f574",
+      "paper": "P8"
+    },
+    "planner/state_projection.schema.json": {
+      "sha256": "c0acd6546545079fae908c5c8baee28e48bb3a158fd358c9acc44d475bfa0122",
+      "paper": "P8"
+    },
+    "roles/cross_functional_partner.md": {
+      "sha256": "2db427e38932e573f31251d97bd995f0f45aca0bee5305bfc39df8b6795eebcd",
+      "paper": "R4"
+    },
+    "roles/direct_manager.md": {
+      "sha256": "e7cd3f000101291abef4207fee7e8e8916d8521823a4c39f70fd65cba60523e7",
+      "paper": "R2"
+    },
+    "roles/experienced_mentor.md": {
+      "sha256": "c425ff47f358231ad96de29a11c165d4d60670de6d2c0bad227b9bacb745d668",
+      "paper": "R10"
+    },
+    "roles/implementation_partner.md": {
+      "sha256": "03e6009e7f24e39a219b99c6ba0135968948dccbf31454a4e8976895cfcaf774",
+      "paper": "R6"
+    },
+    "roles/internal_auditor.md": {
+      "sha256": "384c5bda86eb733fe40ac11d041369cef01712551da8d2357f5f31921c268f7a",
+      "paper": "R9"
+    },
+    "roles/legal_risk_reviewer.md": {
+      "sha256": "e344f9de394e102027adb58401c537c79f6be16ed768a7e8ca3aef9e5b66772b",
+      "paper": "R8"
+    },
+    "roles/procurement_evaluator.md": {
+      "sha256": "c803a323306a87ee74a140968f3461fe4a227d2ab21108ba22ddb68dd9cfa34f",
+      "paper": "R7"
+    },
+    "roles/same_job_teammate.md": {
+      "sha256": "64a456add63080d66bea2a3878800e908e3e29cdefff02915d7036422420c562",
+      "paper": "R1"
+    },
+    "roles/technical_customer.md": {
+      "sha256": "a71e0033c28904f2151f94dab122c33d3394f2904e2c48f5aaf9ecea665cbf8e",
+      "paper": "R5"
+    },
+    "roles/upstream_requester.md": {
+      "sha256": "2a9b7e8e19891c82b06ed900091a0dc26cfed49ccc94426651ea5dd6f42e41b0",
+      "paper": "R3"
+    },
+    "worker/initial_work.md": {
+      "sha256": "db2f87174514208af28748f89eda58f68704d8f6024e9b9f83890e8bf833f357",
+      "paper": "P1"
+    },
+    "worker/worker_revision.md": {
+      "sha256": "4f2a5a32987ee881ed385fb6e944706895d6a962388f50ef7fd22510f35c278d",
+      "paper": "P1"
+    },
+    "worker/worker_role.md": {
+      "sha256": "fd680e4c2965495cae354a4ba78f9cbae66ebc7c4834adc2dfa991c1e3190ed7",
+      "paper": "P1"
+    }
+  }
+}
