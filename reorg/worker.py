@@ -114,11 +114,11 @@ class WorkspaceCodeExec(LocalCodeExecToolProvider):
 
     def __init__(self, sandbox: Path, shell_timeout: int = 600) -> None:
         super().__init__(shell_timeout=shell_timeout)
-        self._sandbox = sandbox
+        self._sbox = sandbox
 
     async def __aenter__(self) -> Tool:
-        self._sandbox.mkdir(parents=True, exist_ok=True)
-        self._temp_dir = self._sandbox
+        self._sbox.mkdir(parents=True, exist_ok=True)
+        self._temp_dir = self._sbox
         return self.get_code_exec_tool(description=self._description)
 
     async def __aexit__(self, exc_type, exc_val, exc_tb) -> None:

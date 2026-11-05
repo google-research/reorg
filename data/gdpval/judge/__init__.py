@@ -16,7 +16,7 @@ expert deliverable.
 
 Gemini 3.1 Pro, Qwen 3.6 27B and Claude Sonnet 4.6 each inspect a fresh
 workspace holding the request, references, signed-point rubric, and the
-candidate and expert files under randomized Response A/B labels (sandbox.py),
+candidate and expert files under randomized Response A/B labels,
 using code execution and image viewing without web access (runner.py). Their
 categorical majority decides win / tie / loss; a split is a tie (vote.py):
 
